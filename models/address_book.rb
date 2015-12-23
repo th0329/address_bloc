@@ -60,4 +60,20 @@ class AddressBook
     return nil
   end
 
+  def iterative_search(name)
+    index = 0
+    upper = @entries.length - 1
+
+    while index <= upper
+      target = @entries[index].name
+
+      if name == target
+        return @entries[index]
+      elsif
+        index += 1
+      end
+    end
+    return nil
+  end
+
 end
